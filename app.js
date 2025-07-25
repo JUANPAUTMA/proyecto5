@@ -2,6 +2,7 @@ import mongoose from "mongoose";//Conectar una base de datos
 import dotenv from "dotenv";//Poder llenar lo que hay en .env
 import cors from "cors";//Dar seguridad a un server
 import express from "express";//Crear un servidor local
+import {test} from "./backend/controllers/alumnos.controller.js"
 //Importaciones de librerias
 
 dotenv.config();
@@ -18,3 +19,5 @@ app.use(cors());
 app.listen(4000, ()=>{
     console.log("Se escucha el servidor, no escucha borroso")
 })//Verificar si funciona el servidor
+
+test();
